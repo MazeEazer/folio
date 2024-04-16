@@ -11,10 +11,9 @@
   &__item{
  
     display: grid;
-    grid-template-columns: repeat(2,minmax(60px,auto));
-    grid-template-rows: repeat(2,20px);
-    row-gap: 4px;
-    justify-content:space-between;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,minmax(21px,auto));
+    row-gap: 5px;
     &-descr{
       grid-column: 1 / -1;
       font-size: 12px;
@@ -39,6 +38,7 @@
       }
     }
     &-price{
+      justify-self: end;
       font-size: 14px;
       line-height: 21px;
       font-weight: bold;
